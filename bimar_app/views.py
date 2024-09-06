@@ -10,4 +10,15 @@ class ListCreateBimar(ListCreateAPIView):
     permission_classes = [IsAdminUser]
 
 
-class
+class listcreatedkhedmat(ListCreateAPIView):
+    queryset = Khedmat.objects.all()
+    serializer_class = KhedmatSerializer
+    permission_classes = [IsAdminUser]
+    
+    
+
+class listcreatedNobat(ListCreateAPIView):
+    queryset = Nobat.objects.all()
+    serializer_class = NobatSerializer
+    permission_classes = [IsAdminUser]
+    
