@@ -25,7 +25,9 @@ class ListCreateNobat(ListCreateAPIView):
     serializer_class = NobatSerializer
     permission_classes = [IsAdminUser]
     filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
+    search_fields = ['bimar__name']
     ordering_fields = ['date']
+    filterset_fields = ['date']
 
 
 class RetrieveUpdateDestroyNobat(RetrieveUpdateDestroyAPIView):
