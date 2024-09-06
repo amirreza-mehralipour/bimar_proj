@@ -16,4 +16,10 @@ class KhedmatSerializer(ModelSerializer):
 class NobatSerializer(ModelSerializer):
     class Meta:
         model = Nobat
-        fields = '__all__'
+        fields = ['bimar', 'date', 'khedmat__name']
+
+
+class PardakhtSerializer(ModelSerializer):
+    class Meta:
+        model = Nobat
+        fields = "__all__"

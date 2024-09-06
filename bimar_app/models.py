@@ -12,7 +12,7 @@ class Khedmat(models.Model):
     price = models.BigIntegerField()
 
     def __str__(self) -> str:
-        return self.name
+        return f'{self.name} - {self.price}'
 
 
 class Nobat(models.Model):
