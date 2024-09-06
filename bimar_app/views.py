@@ -1,4 +1,4 @@
-from rest_framework.generics import ListCreateAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .models import *
 from .serializers import *
 from rest_framework.permissions import IsAdminUser
